@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Pagely</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+<header class="site-header">
+<a class="logo" href="index.html">Pagely</a>
+<nav aria-label="Main navigation"><ul><li><a href="index.html" class=active aria-current=page>Home</a></li><li><a href="library.html">Library</a></li><li><a href="about.html">About</a></li></ul></nav>
+<button id="themeBtn" class="btn ghost" type="button" aria-label="Toggle dark mode">Dark mode</button>
+</header>
+<main>
+<section class="hero"><div class="hero-text"><h1>Stories that fit in one sitting.</h1>
+<p>Thirty original one-chapter stories across ten genres. Pick a cover, read, and like your favorites.</p>
+<a class="btn big" href="library.html">Browse the Library</a></div>
+<img class="hero-img" src="images/covers/cover-04.jpg" alt="Cover of Crown of Ashfall"></section>
+<section class="section"><h2>Featured stories</h2><div class="grid"><article class="book-card" data-title="letters to marisol" data-author="ana villareal" data-genre="Romance">
+<a href="stories/story-01.html" class="cover-link"><img src="images/covers/cover-01.jpg" alt="Cover of Letters to Marisol" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Romance</span><h3>Letters to Marisol</h3><p class="author">by Ana Villareal</p>
+<p class="blurb">A mailman keeps delivering letters addressed to a woman who moved away years ago.</p><a class="btn" href="stories/story-01.html">Read Story</a></div></article>
+<article class="book-card" data-title="crown of ashfall" data-author="mika santos" data-genre="Fantasy">
+<a href="stories/story-04.html" class="cover-link"><img src="images/covers/cover-04.jpg" alt="Cover of Crown of Ashfall" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Fantasy</span><h3>Crown of Ashfall</h3><p class="author">by Mika Santos</p>
+<p class="blurb">A kitchen girl learns she is the last heir to a burned kingdom.</p><a class="btn" href="stories/story-04.html">Read Story</a></div></article>
+<article class="book-card" data-title="the empty desk" data-author="gabriel cruz" data-genre="Mystery">
+<a href="stories/story-07.html" class="cover-link"><img src="images/covers/cover-07.jpg" alt="Cover of The Empty Desk" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Mystery</span><h3>The Empty Desk</h3><p class="author">by Gabriel Cruz</p>
+<p class="blurb">A teacher finds a note from a student who vanished weeks ago.</p><a class="btn" href="stories/story-07.html">Read Story</a></div></article>
+<article class="book-card" data-title="signal from kepler-9" data-author="arvin dela cruz" data-genre="Sci-Fi">
+<a href="stories/story-11.html" class="cover-link"><img src="images/covers/cover-11.jpg" alt="Cover of Signal from Kepler-9" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Sci-Fi</span><h3>Signal from Kepler-9</h3><p class="author">by Arvin Dela Cruz</p>
+<p class="blurb">A radio technician on a lonely moon base receives a message from the future.</p><a class="btn" href="stories/story-11.html">Read Story</a></div></article>
+<article class="book-card" data-title="trail of the lost mountain" data-author="ben soriano" data-genre="Adventure">
+<a href="stories/story-15.html" class="cover-link"><img src="images/covers/cover-15.jpg" alt="Cover of Trail of the Lost Mountain" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Adventure</span><h3>Trail of the Lost Mountain</h3><p class="author">by Ben Soriano</p>
+<p class="blurb">A hiking club takes a shortcut and finds a mountain that is not on any map.</p><a class="btn" href="stories/story-15.html">Read Story</a></div></article>
+<article class="book-card" data-title="paper boats" data-author="lena robles" data-genre="Drama">
+<a href="stories/story-22.html" class="cover-link"><img src="images/covers/cover-22.jpg" alt="Cover of Paper Boats" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Drama</span><h3>Paper Boats</h3><p class="author">by Lena Robles</p>
+<p class="blurb">A girl and her father fold paper boats during the monsoon season, one for every worry.</p><a class="btn" href="stories/story-22.html">Read Story</a></div></article>
+</div></section>
+<section class="section"><h2>Browse by genre</h2><div class="chips"><a class="chip" href="library.html?genre=Romance">Romance</a><a class="chip" href="library.html?genre=Fantasy">Fantasy</a><a class="chip" href="library.html?genre=Mystery">Mystery</a><a class="chip" href="library.html?genre=Horror">Horror</a><a class="chip" href="library.html?genre=Sci-Fi">Sci-Fi</a><a class="chip" href="library.html?genre=Adventure">Adventure</a><a class="chip" href="library.html?genre=Comedy">Comedy</a><a class="chip" href="library.html?genre=Thriller">Thriller</a><a class="chip" href="library.html?genre=Historical">Historical</a><a class="chip" href="library.html?genre=Drama">Drama</a></div></section>
+</main>
+<footer class="site-footer"><p>Pagely is a school project for ITE 1. All stories are original works written for this site.</p></footer>
+</body>
+</html>

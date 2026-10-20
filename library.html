@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Library | Pagely</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+<header class="site-header">
+<a class="logo" href="index.html">Pagely</a>
+<nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="library.html" class=active aria-current=page>Library</a></li><li><a href="about.html">About</a></li></ul></nav>
+<button id="themeBtn" class="btn ghost" type="button" aria-label="Toggle dark mode">Dark mode</button>
+</header>
+<main>
+<section class="section"><h1>Library</h1><p class="lead">30 stories, one chapter each.</p>
+<div class="filters"><label for="search" class="sr">Search stories</label><input id="search" type="search" placeholder="Search by title or author">
+<label for="genreFilter" class="sr">Filter by genre</label><select id="genreFilter"><option value="all">All genres</option><option>Romance</option><option>Fantasy</option><option>Mystery</option><option>Horror</option><option>Sci-Fi</option><option>Adventure</option><option>Comedy</option><option>Thriller</option><option>Historical</option><option>Drama</option></select></div>
+<p id="count" class="lead" aria-live="polite"></p>
+<div class="grid" id="bookGrid"><article class="book-card" data-title="letters to marisol" data-author="ana villareal" data-genre="Romance">
+<a href="stories/story-01.html" class="cover-link"><img src="images/covers/cover-01.jpg" alt="Cover of Letters to Marisol" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Romance</span><h3>Letters to Marisol</h3><p class="author">by Ana Villareal</p>
+<p class="blurb">A mailman keeps delivering letters addressed to a woman who moved away years ago.</p><a class="btn" href="stories/story-01.html">Read Story</a></div></article>
+<article class="book-card" data-title="the last sunflower" data-author="rina domingo" data-genre="Romance">
+<a href="stories/story-02.html" class="cover-link"><img src="images/covers/cover-02.jpg" alt="Cover of The Last Sunflower" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Romance</span><h3>The Last Sunflower</h3><p class="author">by Rina Domingo</p>
+<p class="blurb">Two rivals at a flower market discover they have been writing to each other anonymously.</p><a class="btn" href="stories/story-02.html">Read Story</a></div></article>
+<article class="book-card" data-title="seats beside me" data-author="carla mendoza" data-genre="Romance">
+<a href="stories/story-03.html" class="cover-link"><img src="images/covers/cover-03.jpg" alt="Cover of Seats Beside Me" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Romance</span><h3>Seats Beside Me</h3><p class="author">by Carla Mendoza</p>
+<p class="blurb">A commuter and a stranger share the same bus seat every morning without saying a word.</p><a class="btn" href="stories/story-03.html">Read Story</a></div></article>
+<article class="book-card" data-title="crown of ashfall" data-author="mika santos" data-genre="Fantasy">
+<a href="stories/story-04.html" class="cover-link"><img src="images/covers/cover-04.jpg" alt="Cover of Crown of Ashfall" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Fantasy</span><h3>Crown of Ashfall</h3><p class="author">by Mika Santos</p>
+<p class="blurb">A kitchen girl learns she is the last heir to a burned kingdom.</p><a class="btn" href="stories/story-04.html">Read Story</a></div></article>
+<article class="book-card" data-title="the dragon who hated fire" data-author="joel bautista" data-genre="Fantasy">
+<a href="stories/story-05.html" class="cover-link"><img src="images/covers/cover-05.jpg" alt="Cover of The Dragon Who Hated Fire" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Fantasy</span><h3>The Dragon Who Hated Fire</h3><p class="author">by Joel Bautista</p>
+<p class="blurb">A young dragon refuses to breathe flames and sets out to find another way to be brave.</p><a class="btn" href="stories/story-05.html">Read Story</a></div></article>
+<article class="book-card" data-title="moonwell academy" data-author="selene park" data-genre="Fantasy">
+<a href="stories/story-06.html" class="cover-link"><img src="images/covers/cover-06.jpg" alt="Cover of Moonwell Academy" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Fantasy</span><h3>Moonwell Academy</h3><p class="author">by Selene Park</p>
+<p class="blurb">On her first night at a school for spellcasters, Willa finds a door that is not on any map.</p><a class="btn" href="stories/story-06.html">Read Story</a></div></article>
+<article class="book-card" data-title="the empty desk" data-author="gabriel cruz" data-genre="Mystery">
+<a href="stories/story-07.html" class="cover-link"><img src="images/covers/cover-07.jpg" alt="Cover of The Empty Desk" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Mystery</span><h3>The Empty Desk</h3><p class="author">by Gabriel Cruz</p>
+<p class="blurb">A teacher finds a note from a student who vanished weeks ago.</p><a class="btn" href="stories/story-07.html">Read Story</a></div></article>
+<article class="book-card" data-title="case file 404" data-author="dana ocampo" data-genre="Mystery">
+<a href="stories/story-08.html" class="cover-link"><img src="images/covers/cover-08.jpg" alt="Cover of Case File 404" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Mystery</span><h3>Case File 404</h3><p class="author">by Dana Ocampo</p>
+<p class="blurb">A detective is handed a case that was officially closed twenty years ago.</p><a class="btn" href="stories/story-08.html">Read Story</a></div></article>
+<article class="book-card" data-title="the whispering hallway" data-author="eli navarro" data-genre="Horror">
+<a href="stories/story-09.html" class="cover-link"><img src="images/covers/cover-09.jpg" alt="Cover of The Whispering Hallway" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Horror</span><h3>The Whispering Hallway</h3><p class="author">by Eli Navarro</p>
+<p class="blurb">A night guard hears footsteps in a school that has been empty for years.</p><a class="btn" href="stories/story-09.html">Read Story</a></div></article>
+<article class="book-card" data-title="do not open the cellar" data-author="mara lim" data-genre="Horror">
+<a href="stories/story-10.html" class="cover-link"><img src="images/covers/cover-10.jpg" alt="Cover of Do Not Open the Cellar" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Horror</span><h3>Do Not Open the Cellar</h3><p class="author">by Mara Lim</p>
+<p class="blurb">A family moves into a house where the previous owner left one strict warning.</p><a class="btn" href="stories/story-10.html">Read Story</a></div></article>
+<article class="book-card" data-title="signal from kepler-9" data-author="arvin dela cruz" data-genre="Sci-Fi">
+<a href="stories/story-11.html" class="cover-link"><img src="images/covers/cover-11.jpg" alt="Cover of Signal from Kepler-9" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Sci-Fi</span><h3>Signal from Kepler-9</h3><p class="author">by Arvin Dela Cruz</p>
+<p class="blurb">A radio technician on a lonely moon base receives a message from the future.</p><a class="btn" href="stories/story-11.html">Read Story</a></div></article>
+<article class="book-card" data-title="the last garden on mars" data-author="tessa villanueva" data-genre="Sci-Fi">
+<a href="stories/story-12.html" class="cover-link"><img src="images/covers/cover-12.jpg" alt="Cover of The Last Garden on Mars" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Sci-Fi</span><h3>The Last Garden on Mars</h3><p class="author">by Tessa Villanueva</p>
+<p class="blurb">A botanist tries to grow the first tomato under a red sky.</p><a class="btn" href="stories/story-12.html">Read Story</a></div></article>
+<article class="book-card" data-title="robot number seven" data-author="paolo garcia" data-genre="Sci-Fi">
+<a href="stories/story-13.html" class="cover-link"><img src="images/covers/cover-13.jpg" alt="Cover of Robot Number Seven" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Sci-Fi</span><h3>Robot Number Seven</h3><p class="author">by Paolo Garcia</p>
+<p class="blurb">A repair robot discovers it can dream and does not know whom to tell.</p><a class="btn" href="stories/story-13.html">Read Story</a></div></article>
+<article class="book-card" data-title="compass of tidewater" data-author="noel ramirez" data-genre="Adventure">
+<a href="stories/story-14.html" class="cover-link"><img src="images/covers/cover-14.jpg" alt="Cover of Compass of Tidewater" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Adventure</span><h3>Compass of Tidewater</h3><p class="author">by Noel Ramirez</p>
+<p class="blurb">Three siblings follow their grandfather&#x27;s compass, which points to treasure instead of north.</p><a class="btn" href="stories/story-14.html">Read Story</a></div></article>
+<article class="book-card" data-title="trail of the lost mountain" data-author="ben soriano" data-genre="Adventure">
+<a href="stories/story-15.html" class="cover-link"><img src="images/covers/cover-15.jpg" alt="Cover of Trail of the Lost Mountain" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Adventure</span><h3>Trail of the Lost Mountain</h3><p class="author">by Ben Soriano</p>
+<p class="blurb">A hiking club takes a shortcut and finds a mountain that is not on any map.</p><a class="btn" href="stories/story-15.html">Read Story</a></div></article>
+<article class="book-card" data-title="my cat runs for mayor" data-author="jessa flores" data-genre="Comedy">
+<a href="stories/story-16.html" class="cover-link"><img src="images/covers/cover-16.jpg" alt="Cover of My Cat Runs for Mayor" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Comedy</span><h3>My Cat Runs for Mayor</h3><p class="author">by Jessa Flores</p>
+<p class="blurb">When a stray cat accidentally wins a town poll, the whole village scrambles to make it official.</p><a class="btn" href="stories/story-16.html">Read Story</a></div></article>
+<article class="book-card" data-title="the great sandwich heist" data-author="marco reyes" data-genre="Comedy">
+<a href="stories/story-17.html" class="cover-link"><img src="images/covers/cover-17.jpg" alt="Cover of The Great Sandwich Heist" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Comedy</span><h3>The Great Sandwich Heist</h3><p class="author">by Marco Reyes</p>
+<p class="blurb">Someone keeps stealing lunches from the office fridge, and Dan is determined to catch the thief.</p><a class="btn" href="stories/story-17.html">Read Story</a></div></article>
+<article class="book-card" data-title="thirty seconds to midnight" data-author="vera castillo" data-genre="Thriller">
+<a href="stories/story-18.html" class="cover-link"><img src="images/covers/cover-18.jpg" alt="Cover of Thirty Seconds to Midnight" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Thriller</span><h3>Thirty Seconds to Midnight</h3><p class="author">by Vera Castillo</p>
+<p class="blurb">A bank analyst receives a countdown on her phone that no one else can see.</p><a class="btn" href="stories/story-18.html">Read Story</a></div></article>
+<article class="book-card" data-title="the man in window nine" data-author="chris padilla" data-genre="Thriller">
+<a href="stories/story-19.html" class="cover-link"><img src="images/covers/cover-19.jpg" alt="Cover of The Man in Window Nine" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Thriller</span><h3>The Man in Window Nine</h3><p class="author">by Chris Padilla</p>
+<p class="blurb">A train passenger realizes the same stranger has appeared in every photograph she took on the trip.</p><a class="btn" href="stories/story-19.html">Read Story</a></div></article>
+<article class="book-card" data-title="the salt road" data-author="isabel tan" data-genre="Historical">
+<a href="stories/story-20.html" class="cover-link"><img src="images/covers/cover-20.jpg" alt="Cover of The Salt Road" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Historical</span><h3>The Salt Road</h3><p class="author">by Isabel Tan</p>
+<p class="blurb">A merchant&#x27;s daughter crosses the desert in 1521 to prove her family&#x27;s honor.</p><a class="btn" href="stories/story-20.html">Read Story</a></div></article>
+<article class="book-card" data-title="the lamplighter of intramuros" data-author="gino aquino" data-genre="Historical">
+<a href="stories/story-21.html" class="cover-link"><img src="images/covers/cover-21.jpg" alt="Cover of The Lamplighter of Intramuros" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Historical</span><h3>The Lamplighter of Intramuros</h3><p class="author">by Gino Aquino</p>
+<p class="blurb">In 1898 Manila, a young lamplighter becomes the messenger for a secret society.</p><a class="btn" href="stories/story-21.html">Read Story</a></div></article>
+<article class="book-card" data-title="paper boats" data-author="lena robles" data-genre="Drama">
+<a href="stories/story-22.html" class="cover-link"><img src="images/covers/cover-22.jpg" alt="Cover of Paper Boats" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Drama</span><h3>Paper Boats</h3><p class="author">by Lena Robles</p>
+<p class="blurb">A girl and her father fold paper boats during the monsoon season, one for every worry.</p><a class="btn" href="stories/story-22.html">Read Story</a></div></article>
+<article class="book-card" data-title="the piano in room 12" data-author="hannah gomez" data-genre="Drama">
+<a href="stories/story-23.html" class="cover-link"><img src="images/covers/cover-23.jpg" alt="Cover of The Piano in Room 12" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Drama</span><h3>The Piano in Room 12</h3><p class="author">by Hannah Gomez</p>
+<p class="blurb">A retired pianist moves into a care home and finds an old piano nobody can play.</p><a class="btn" href="stories/story-23.html">Read Story</a></div></article>
+<article class="book-card" data-title="where the river bends" data-author="ramon estrada" data-genre="Drama">
+<a href="stories/story-24.html" class="cover-link"><img src="images/covers/cover-24.jpg" alt="Cover of Where the River Bends" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Drama</span><h3>Where the River Bends</h3><p class="author">by Ramon Estrada</p>
+<p class="blurb">A teenager returns to his hometown to scatter his grandmother&#x27;s ashes and finds an old promise.</p><a class="btn" href="stories/story-24.html">Read Story</a></div></article>
+<article class="book-card" data-title="neon alley" data-author="zia fernandez" data-genre="Thriller">
+<a href="stories/story-25.html" class="cover-link"><img src="images/covers/cover-25.jpg" alt="Cover of Neon Alley" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Thriller</span><h3>Neon Alley</h3><p class="author">by Zia Fernandez</p>
+<p class="blurb">In a city of rain and glowing signs, a courier delivers a package that begins to hum.</p><a class="btn" href="stories/story-25.html">Read Story</a></div></article>
+<article class="book-card" data-title="starlight diner" data-author="ollie mercado" data-genre="Sci-Fi">
+<a href="stories/story-26.html" class="cover-link"><img src="images/covers/cover-26.jpg" alt="Cover of Starlight Diner" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Sci-Fi</span><h3>Starlight Diner</h3><p class="author">by Ollie Mercado</p>
+<p class="blurb">A diner at the edge of space serves meals to travelers who have lost their way.</p><a class="btn" href="stories/story-26.html">Read Story</a></div></article>
+<article class="book-card" data-title="the quiet knight" data-author="dante rivera" data-genre="Fantasy">
+<a href="stories/story-27.html" class="cover-link"><img src="images/covers/cover-27.jpg" alt="Cover of The Quiet Knight" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Fantasy</span><h3>The Quiet Knight</h3><p class="author">by Dante Rivera</p>
+<p class="blurb">A knight who never speaks defends a village that does not know his name.</p><a class="btn" href="stories/story-27.html">Read Story</a></div></article>
+<article class="book-card" data-title="the ghost who wanted a job" data-author="patty salazar" data-genre="Comedy">
+<a href="stories/story-28.html" class="cover-link"><img src="images/covers/cover-28.jpg" alt="Cover of The Ghost Who Wanted a Job" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Comedy</span><h3>The Ghost Who Wanted a Job</h3><p class="author">by Patty Salazar</p>
+<p class="blurb">A friendly ghost applies for work at a haunted hotel and is rejected for not being scary.</p><a class="btn" href="stories/story-28.html">Read Story</a></div></article>
+<article class="book-card" data-title="fireflies in december" data-author="jules mangubat" data-genre="Drama">
+<a href="stories/story-29.html" class="cover-link"><img src="images/covers/cover-29.jpg" alt="Cover of Fireflies in December" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Drama</span><h3>Fireflies in December</h3><p class="author">by Jules Mangubat</p>
+<p class="blurb">A boy believes the fireflies that appear in winter are messages from his late mother.</p><a class="btn" href="stories/story-29.html">Read Story</a></div></article>
+<article class="book-card" data-title="the mirror shop" data-author="wren castillo" data-genre="Horror">
+<a href="stories/story-30.html" class="cover-link"><img src="images/covers/cover-30.jpg" alt="Cover of The Mirror Shop" loading="lazy"></a>
+<div class="book-info"><span class="genre-tag">Horror</span><h3>The Mirror Shop</h3><p class="author">by Wren Castillo</p>
+<p class="blurb">A girl inherits an antique shop where every mirror shows a different version of her.</p><a class="btn" href="stories/story-30.html">Read Story</a></div></article>
+</div>
+<p id="empty" class="lead" hidden>No stories match your search. Try a different title or genre.</p></section>
+</main>
+<footer class="site-footer"><p>Pagely is a school project for ITE 1. All stories are original works written for this site.</p></footer>
+</body>
+</html>
